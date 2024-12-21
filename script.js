@@ -1,5 +1,12 @@
 let initialValue = 0;
 
+if (window.innerWidth  >= 600 && window.innerWidth <= 900) {
+    window.alert("Suggestion: You're in desktop mode on a mobile device!.\n\nPlease switch to mobile mode for better experience.");
+} else if(window.innerWidth >= 900 && window.innerWidth <= 1200) {
+    window.alert("Suggestion: You're trying to access mobile width in desktop device.\n\nPlease resize to desktop width.");
+}
+
+
 function appendNumber(number) {
     if (initialValue === 0 || initialValue === '') {
         initialValue = number.toString();
